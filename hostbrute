@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo ""
+echo " HostbBrute brute force subdomains with host command by B4GG3R"
+echo " Usage: hostbrute hostslist.txt output.txt 50 #50 is thread"
+echo ""
+
+# rush tool is required https://github.com/shenwei356/rush
+
+
+seq $3 | rush host {} -i $1 >> $2
