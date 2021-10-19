@@ -8,4 +8,4 @@ echo ""
 # rush tool is required https://github.com/shenwei356/rush
 
 
-seq $3 | rush host {} -i $1 >> $2
+seq $3 | rush 'host -t A' {} -i $1 >> $2
